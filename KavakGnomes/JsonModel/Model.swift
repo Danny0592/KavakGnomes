@@ -30,9 +30,18 @@ struct Brastlewark: Codable {
     let thumbnail: String
     let age: Int
     let weight, height: Double
-    let hairColor: HairColor
-    let professions: [Profession]
+    let hairColor: String
+    let professions: [String]
     let friends: [String]
+    
+//    let id: Int
+//    let name: String
+//    let thumbnail: String
+//    let age: Int
+//    let weight, height: Double
+//    let hairColor: HairColor
+//    let professions: [Profession]
+//    let friends: [String]
 
     enum CodingKeys: String, CodingKey {
         case id, name, thumbnail, age, weight, height
@@ -40,6 +49,7 @@ struct Brastlewark: Codable {
         case professions, friends
     }
 }
+// de aqui se puede o no ocupar
 
 enum HairColor: String, Codable {
     case black = "Black"

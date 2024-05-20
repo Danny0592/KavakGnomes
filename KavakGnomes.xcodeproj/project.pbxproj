@@ -13,6 +13,9 @@
 		47FC232D2BF800E5007129CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FC232C2BF800E5007129CB /* Preview Assets.xcassets */; };
 		47FC23352BF80128007129CB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC23342BF80128007129CB /* Model.swift */; };
 		47FC23382BF801B8007129CB /* KavakGnomesApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC23372BF801B8007129CB /* KavakGnomesApiClient.swift */; };
+		47FC233B2BF833F8007129CB /* ViewInhabitantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC233A2BF833F8007129CB /* ViewInhabitantsView.swift */; };
+		47FC233F2BFBD3CC007129CB /* GnomesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC233E2BFBD3CC007129CB /* GnomesDetailView.swift */; };
+		47FC23422BFBE326007129CB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 47FC23412BFBE326007129CB /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		47FC232C2BF800E5007129CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47FC23342BF80128007129CB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		47FC23372BF801B8007129CB /* KavakGnomesApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KavakGnomesApiClient.swift; sourceTree = "<group>"; };
+		47FC233A2BF833F8007129CB /* ViewInhabitantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInhabitantsView.swift; sourceTree = "<group>"; };
+		47FC233E2BFBD3CC007129CB /* GnomesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesDetailView.swift; sourceTree = "<group>"; };
+		47FC23432BFBE598007129CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47FC23422BFBE326007129CB /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +62,7 @@
 		47FC23242BF800E3007129CB /* KavakGnomes */ = {
 			isa = PBXGroup;
 			children = (
+				47FC23432BFBE598007129CB /* Info.plist */,
 				47FC23392BF801E4007129CB /* Moduls */,
 				47FC23362BF80163007129CB /* NetWork */,
 				47FC23332BF800F2007129CB /* JsonModel */,
@@ -93,6 +101,8 @@
 		47FC23392BF801E4007129CB /* Moduls */ = {
 			isa = PBXGroup;
 			children = (
+				47FC233A2BF833F8007129CB /* ViewInhabitantsView.swift */,
+				47FC233E2BFBD3CC007129CB /* GnomesDetailView.swift */,
 			);
 			path = Moduls;
 			sourceTree = "<group>";
@@ -113,6 +123,9 @@
 			dependencies = (
 			);
 			name = KavakGnomes;
+			packageProductDependencies = (
+				47FC23412BFBE326007129CB /* Kingfisher */,
+			);
 			productName = KavakGnomes;
 			productReference = 47FC23222BF800E3007129CB /* KavakGnomes.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +154,9 @@
 				Base,
 			);
 			mainGroup = 47FC23192BF800E3007129CB;
+			packageReferences = (
+				47FC23402BFBE326007129CB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 47FC23232BF800E3007129CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -167,7 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47FC233F2BFBD3CC007129CB /* GnomesDetailView.swift in Sources */,
 				47FC23352BF80128007129CB /* Model.swift in Sources */,
+				47FC233B2BF833F8007129CB /* ViewInhabitantsView.swift in Sources */,
 				47FC23382BF801B8007129CB /* KavakGnomesApiClient.swift in Sources */,
 				47FC23282BF800E3007129CB /* ContentView.swift in Sources */,
 				47FC23262BF800E3007129CB /* KavakGnomesApp.swift in Sources */,
@@ -306,6 +324,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"KavakGnomes/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KavakGnomes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -334,6 +353,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"KavakGnomes/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KavakGnomes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -374,6 +394,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47FC23402BFBE326007129CB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47FC23412BFBE326007129CB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47FC23402BFBE326007129CB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 47FC231A2BF800E3007129CB /* Project object */;
 }
